@@ -1,0 +1,9 @@
+GET http://localhost:8019/api/v1/chain
+GET http://localhost:8019/api/v1/chain/mine
+GET http://localhost:8019/api/v1/node/conflict_status
+POST http://localhost:8019/api/v1/transaction
+{
+	"sender": "john_smith",
+	"recipient": "amazon.com", 
+	"amount": 21.23
+}
