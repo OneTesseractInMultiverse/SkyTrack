@@ -1,3 +1,6 @@
+https://assets.weforum.org/editor/_DRLsawgrOCG3OwH3VP4o9VuR4HMAsBeRGFZSo_7RPk.png
+https://medium.com/@micheledaliessi/how-does-the-blockchain-work-98c8cd01d2ae
+
 GET http://localhost:8019/api/v1/chain
 GET http://localhost:8019/api/v1/chain/mine
 GET http://localhost:8019/api/v1/node/conflict_status
