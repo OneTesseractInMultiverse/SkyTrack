@@ -1,11 +1,11 @@
-from skychain import skytrack, blockchain, node_id
+from skychain import sky_app, blockchain, node_id
 from flask import jsonify, request
 
 
 # --------------------------------------------------------------------------
 # GET: /API/V1/NODE/
 # --------------------------------------------------------------------------
-@skytrack.route('/api/v1/node', methods=['POST'])
+@sky_app.route('/api/v1/node', methods=['POST'])
 def post_node():
     values = request.get_json()
     nodes = values.get('nodes')
@@ -23,7 +23,7 @@ def post_node():
 # --------------------------------------------------------------------------
 # GET: /API/V1/NODE/CONFLICT_STATUS
 # --------------------------------------------------------------------------
-@skytrack.route('/api/v1/node/conflict_status', methods=['GET'])
+@sky_app.route('/api/v1/node/conflict_status', methods=['GET'])
 def consensus():
     replaced = blockchain.resolve_conflicts()
     if replaced:

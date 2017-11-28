@@ -10,9 +10,9 @@ from skychain.models.blockchain import Blockchain
 # SETUP GENERAL APPLICATION
 # ------------------------------------------------------------------------------
 __version__ = '1.0.0'
-skytrack = Flask('Brick')
-skytrack.config.from_object('config')
-skytrack.debug = True
+sky_app = Flask('Brick')
+sky_app.config.from_object('config')
+sky_app.debug = True
 
 # Generate a globally unique address for this node
 node_id = str(uuid.uuid4()).replace('-', '')

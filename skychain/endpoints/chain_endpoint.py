@@ -1,4 +1,4 @@
-from skychain import skytrack, blockchain, node_id
+from skychain import sky_app, blockchain, node_id
 from flask import jsonify, request
 import datetime
 
@@ -6,7 +6,7 @@ import datetime
 # --------------------------------------------------------------------------
 # GET: /API/V1/CHAIN
 # --------------------------------------------------------------------------
-@skytrack.route('/api/v1/chain', methods=['GET'])
+@sky_app.route('/api/v1/chain', methods=['GET'])
 def full_chain():
     response = {
         'chain': blockchain.chain,
@@ -18,7 +18,7 @@ def full_chain():
 # --------------------------------------------------------------------------
 # GET: /API/V1/CHAIN/MINE
 # --------------------------------------------------------------------------
-@skytrack.route('/api/v1/chain/mine', methods=['GET'])
+@sky_app.route('/api/v1/chain/mine', methods=['GET'])
 def get_my_chain():
     # We run the proof of work algorithm to get the next proof...
     last_block = blockchain.last_block

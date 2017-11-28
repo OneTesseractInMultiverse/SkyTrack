@@ -1,11 +1,11 @@
-from skychain import skytrack
+from skychain import sky_app
 from flask import jsonify, request
 
 
 # --------------------------------------------------------------------------
 # GET: /ACCOUNT
 # --------------------------------------------------------------------------
-@skytrack.route('/', methods=['GET'])
+@sky_app.route('/', methods=['GET'])
 def get_root():
     """
         Gets the requester's IP Address and the User Agent and builds a tiny

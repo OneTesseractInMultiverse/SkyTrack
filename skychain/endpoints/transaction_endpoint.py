@@ -1,11 +1,11 @@
-from skychain import skytrack, blockchain, node_id
+from skychain import sky_app, blockchain, node_id
 from flask import jsonify, request
 
 
 # --------------------------------------------------------------------------
 # POST: /API/V1/TRANSACTION
 # --------------------------------------------------------------------------
-@skytrack.route('/api/v1/transaction', methods=['POST'])
+@sky_app.route('/api/v1/transaction', methods=['POST'])
 def post_transaction():
     values = request.get_json()
     # Check that the required fields are in the POST'ed data
