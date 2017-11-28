@@ -1,0 +1,14 @@
+.idea
+.idea/*
+lib
+lib/*
+bin
+bin/*
+include
+include/*
+.Python
+skychain/__pycache__/
+skychain/endpoints/__pycache__/
+pip-selfcheck.json
+*.pyc
+.DS_Store
