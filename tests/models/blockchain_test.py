@@ -19,6 +19,7 @@ class BlockchainTestCase(TestCase):
             amount=amount
         )
 
+
 # =======================================================================================
 # TEST CLASS TEST REGISTER NODES
 # =======================================================================================
@@ -63,8 +64,10 @@ class TestRegisterNodes(BlockchainTestCase):
         assert len(blockchain.nodes) == 1
 
 
+# =======================================================================================
+# TEST CLASS BLOCKS AND TRANSACTIONS
+# =======================================================================================
 class TestBlocksAndTransactions(BlockchainTestCase):
-
 
     # -----------------------------------------------------------------------------------
     # TEST BLOCK CREATION
@@ -194,6 +197,7 @@ class TestBlocksAndTransactions(BlockchainTestCase):
         created_block = self.blockchain.last_block
         # Assert
         assert len(self.blockchain.chain) == 2
+
 
 # =======================================================================================
 # TEST CLASS TEST HASHING AND PROOFS
