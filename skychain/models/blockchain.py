@@ -41,7 +41,7 @@ class Blockchain:
             :param address: Address of the node. Eg. 'http://192.168.0.5:5000'
         """
         parsed_url = urlparse(address)
-        self.nodes.add(parsed_url.netloc)
+       #self.nodes.add(parsed_url.netloc)
 
     # -----------------------------------------------------------------------------------
     # VALID CHAIN
