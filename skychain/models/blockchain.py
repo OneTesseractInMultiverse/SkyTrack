@@ -42,7 +42,6 @@ class Blockchain:
         """
         parsed_url = urlparse(address)
         self.nodes.add(parsed_url.netloc)
-        self.nodes.add(parsed_url.netloc)
 
     # -----------------------------------------------------------------------------------
     # VALID CHAIN
@@ -58,7 +57,7 @@ class Blockchain:
         current_index = 1
 
         while current_index < len(chain):
-            block = chain[current_index]
+            block = chain[current_index-1]
             print(f'{last_block}')
             print(f'{block}')
             print("\n-----------\n")
