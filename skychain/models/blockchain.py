@@ -42,6 +42,7 @@ class Blockchain:
         """
         parsed_url = urlparse(address)
         self.nodes.add(parsed_url.netloc)
+        self.nodes.add(parsed_url.netloc)
 
     # -----------------------------------------------------------------------------------
     # VALID CHAIN
