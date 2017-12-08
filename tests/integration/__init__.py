@@ -21,7 +21,5 @@ class SkyTrackIntegrationTest(unittest.TestCase):
     # -----------------------------------------------------------------------------------
     def test_default_chain_length_is_one(self):
         service_response = self.app.get('/api/v1/chain')
-
         json_data = json.loads(service_response.get_data(as_text=True))
-        print(json_data)
         assert json_data["length"] is 1

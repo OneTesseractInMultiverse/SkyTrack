@@ -2,4 +2,5 @@
 
 [![Build Status](https://travis-ci.org/OneTesseractInMultiverse/SkyTrack.svg?branch=master)](https://travis-ci.org/OneTesseractInMultiverse/SkyTrack)
 
-A minimal Blockchain implementation based on GarnetREST and Flask
+This is a tiny and very basic implementation of a blockchain network used only to teach the basic concepts of how blockchain works.
+

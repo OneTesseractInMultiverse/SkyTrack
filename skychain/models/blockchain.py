@@ -10,6 +10,7 @@ from urllib.parse import urlparse
 # =======================================================================================
 
 class Blockchain:
+    
     """
         A blockchain is a digital ledger in which transactions made in bitcoin or another
         crypto currency are recorded chronologically and publicly. It can be said that is
@@ -23,6 +24,7 @@ class Blockchain:
     # CONSTRUCTOR
     # -----------------------------------------------------------------------------------
     def __init__(self):
+        
         """
             Creates a instance of a blockchain that can record transactions and be
             validated
